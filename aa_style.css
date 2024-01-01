@@ -6,10 +6,35 @@
 }
 
 @font-face {
+    font-family: "PixelMono";
+    src: url("Font/7-12-serif.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SplineSansMono";
+    src: url("Font/SplineSansMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SplineSansMonoSemiBold";
+    src: url("Font/SplineSansMono-SemiBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Dream";
     src: url("Font/YouSheYuFeiTeJianKangTi.ttf");
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    margin: 0;
 }
 
 .menu_bar {
@@ -21,6 +46,7 @@
     right: 0;
     height: 7%;
     vertical-align: middle;
+    z-index: 2;
 }
 
 .menu1 {
@@ -54,4 +80,91 @@
 .menu2:hover {
     background-color: rgb(255, 255, 255, 0.9);
     color: rgb(0, 0, 0, 0.8);
+}
+
+.intro {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.frontpic {
+    float: left;
+    display: block;
+    height: auto;
+    width: calc(100vw * 0.55);
+}
+
+#introName {
+    font-family: "PixelMono";
+    position: relative;
+    margin-top: 7%;
+    margin-left: 60%;
+    line-height: 1.5;
+    width: 30%;
+}
+
+.introPara {
+    font-family: "SplineSansMono";
+    font-size: medium;
+    margin-top: 3%;
+    line-height: 1.5;
+    margin-right: 3%;
+    margin-left: 60%;
+    width: 33%;
+}
+
+b {
+    font-family: "SplineSansMonoSemiBold";
+}
+
+.a1 {
+    font-family: "PixelifySans";
+    text-decoration: none;
+    color: rgb(25, 78, 136);
+}
+
+.a1:hover {
+    font-weight: bolder;
+}
+
+.guide1 {
+    color: rgb(196, 196, 196);
+    font-family: "PixelMono";
+    font-size: x-large;
+    margin-top: 8%;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.guide1:hover {
+    color: #000;
+}
+
+.skills {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#skill_title {
+    font-family: "PixelMono";
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.skill_bar {
+    margin-left: 10%;
+}
+
+.skillbutton {
+    font-family: "SplineSansMono";
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: medium;
+    height: 100%;
+    width: 20%;
 }
