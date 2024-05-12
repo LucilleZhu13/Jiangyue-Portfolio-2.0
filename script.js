@@ -1,24 +1,37 @@
-function toSkills() {
-    window.location.hash = "#skill_title";
+var btns = document.getElementsByTagName("button");
+var tabBar = document.getElementById("tabBar");
+let a = "Programming";
+
+document.getElementById("ProgramTab").style.backgroundColor = "rgb(0, 0, 0, 0.8)";
+document.getElementById("ProgramTab").style.color = "rgb(255, 255, 255, 0.9)";
+document.getElementById(a).style.display = "block";
+let showDiv=(str)=>{
+    // console.log("hiiii");
+    document.getElementById(str).style.display = "block";
+    if (a != str) {
+        document.getElementById(a).style.display = "none";
+    }
+    
+    a = str;
 }
 
-var tabs = document.getElementsByClassName('tab-head')[0].getElementsByTagName('h2'),
-                contents = document.getElementsByClassName('tab-content')[0].getElementsByTagName('div');
 
-            (function changeTab(tab) {
-                for(var i = 0, len = tabs.length; i < len; i++) {
-                    tabs[i].onmouseover = showTab;
-                }
-            })();
-
-            function showTab() {
-                for(var i = 0, len = tabs.length; i < len; i++) {
-                    if(tabs[i] === this) {
-                        tabs[i].className = 'selected';
-                        contents[i].className = 'show';
-                    } else {
-                        tabs[i].className = '';
-                        contents[i].className = '';
-                    }
+for (var i = 0; i< btns.length; i++){
+    if (btns[i].style.backgroundColor != null) {
+        btns[i].onclick = function(){
+            var buttonVal = this.innerHTML;
+            for (var i = 0; i< btns.length; i++) {
+                if (tabBar.contains(btns[i])) {
+                    btns[i].style.backgroundColor = "";
+                    btns[i].style.color = "black";
+                    showDiv(buttonVal);
                 }
             }
+            this.style.backgroundColor = "rgb(0, 0, 0, 0.8)";
+            this.style.color = "rgb(255, 255, 255, 0.9)";
+        }
+    }
+    
+}
+
+

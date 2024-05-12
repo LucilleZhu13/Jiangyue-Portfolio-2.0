@@ -29,22 +29,47 @@
         </p>
         
         <div class="guide1">
-            <p onclick="toSkills()">learn more about me↓</p>
+            <a class="a2"href="#skill_title"><p onclick="">learn more about me↓</p></a>
         </div>
     </div>
 
     <div class="skills">
         <h1 id="skill_title">Skills</h1>
 
-        <div class="tab-head">
-            <h2 class="selected">1</h2>
-            <h2>2</h2>
-            <h2>3</h2>
+        <div class="skill_bar" id="tabBar">
+            <button class="skillbutton2" id="ProgramTab">Programming</button>
+            <button class="skillbutton2">Software</button>
+            <button class="skillbutton2">Design</button>
+            <button class="skillbutton2">Language</button>
         </div>
+
+
         <div class="tab-content">
-            <div class="show">content1</div>
-            <div>content2</div>
-            <div>content3</div>
+            <div class="skillbox" id="Programming">
+                <div class="skillContent">Java</div>
+                <div class="skillContent">Python</div>
+                <div class="skillContent">C</div>
+                <div class="skillContent">HTML</div>
+                <div class="skillContent">CSS</div>
+                <div class="skillContent">JavaScript</div>
+                <div class="skillContent">LaTeX</div>
+            </div>
+            <div class="skillbox" id="Software">
+                <div class="skillContent">Figma</div>
+                <div class="skillContent">Illustrator</div>
+                <div class="skillContent">Blender</div>
+                <div class="skillContent">Unity</div>
+                <div class="skillContent">Photoshop</div>
+            </div>
+            <div class="skillbox" id="Design">
+                <div class="skillContent">Front-end</div>
+                <div class="skillContent">Game</div>
+                <div class="skillContent">Website</div>
+            </div>
+            <div class="skillbox" id="Language">
+                <div class="skillContent">Chinese</div>
+                <div class="skillContent">English</div>
+            </div>
         </div>
     </div>
     
